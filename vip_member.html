@@ -15,6 +15,9 @@
             box-sizing:border-box;
             /*float:left;*/
         }
+        div{
+            margin:0 auto;
+        }
         /*成为会员公共样式*/
         .sub_container{
             width:1200px;height:2785px;
@@ -34,33 +37,42 @@
         /*内容-成为会员——身体*/
         /*成为会员整体样式*/
         #vip_member{
-            width:100%;height:2162px;
+            width:100%;
+            /*height:2162px;*/
             background:#005cbf;
             float:left;
-
+            text-align:center;
         }
         li{list-style:none;}
         /*内容-成为会员—身体—头——扫码绑定*/
         #vip_member>h1{
             width:100%;
+            box-sizing:border-box;
             line-height:90px;
             font-size:36px;
             text-align:center;
             float:left;
+            letter-spacing:0.3rem;/*字与字之间的空隙*/
+            color:#262626;
         }
-        /*内容-成为会员—身体—中间——购物积分等6个*/
+          /*内容-成为会员—身体—中间——购物积分等6个*/
         .member_gn{
-            width:77%;height:261px;
+            width:77%;
+            /*height:261px;*/
             background:#0000ff;
             text-align:center;
             float:left;
+            padding:0 11.5%;
+        }
+        .member_gn ul{
             padding:0;
+            margin:0;
         }
         .member_gn li:first-child{
             width:55%;
             background: #3f6dff;
             float:left;
-
+            padding:0;
             box-sizing:border-box;
         }
         .member_gn li:last-child{
@@ -74,62 +86,94 @@
             border:1px solid #989898;
             background: #e4ebee;
             margin-bottom:10px;
-            margin-left:10px;
+            margin-right:10px;
             padding:20px 0;
             border-radius:6px;
             color:#666;
             font:normal bold 22px "微软雅黑";
-
         }
-        member_gn dd{
+        .member_gn dd{
             display:block;
             float:left;
-
+            padding:38.5px 0;;
         }
-        member_gn dt{
+        .member_gn dt{
             display:block;
-            float:right;
-
+            float:left;
+            text-align:left;
+            line-height:40px;
+            padding:50px 0;
+            /*font:bold 20px "微软雅黑";这样写没有行之间的间距*/
+            font-size:20px;
+            font-weight:bold;
+            color:#666;
+            margin-left:10px;
         }
-
-        /*内容-成为会员—身体—中间——取消电子卡*/
+        /*内容-成为会员—身体—中间——取消卡*/
         .member_gnline{
-            width: 945px;
-            height: 55px;
+            width: 77%;
+            /*height: 55px;*/
             background:#ccc;
             color:#333;
-            font-size:22px;
+            font-size:20px;
             line-height:55px;
             text-align:center;
             float:left;
+            padding:0 11.5%;
+            display:block;
+            border-radius:6px;
+            margin:30px 0;
         }
         /*内容-成为会员—身体—中间——微信注册流程字体*/
         .member_gn>h1{
+            width:77%;
             color:#262626;
+            line-height:90px;
             text-align:center;
             float:left;
+            padding:0 11.5%;
         }
 
         /*内容-成为会员—身体—尾部——步骤图片*/
         .member_step{
+            /*float:left;*/
             width:77%;
             color:#666;
             font-size:20px;
+            padding:0 11.5%;
+        }
+        .member_step ul{
+            margin:0;
+            padding:0;
+        }
+        .member_step ul li{
             float:left;
-
+            width:30%;
+            margin:0 3.3% 60px 0;
         }
         .member_step ul li img{
-            width:228px;height:530px;
+            width:100%;
             color:#666;
             font-size:20px;
             float:left;
-
         }
         /*内容-成为会员—身体—尾部——table表格*/
+        .member_step table{
+            margin:50px 0;
+            float:left;
+            border:1px solid #999;
+        }
+        .member_step table tr{
+            text-align:center;
+        }
+        .member_step table tr td{
+            text-align:center;
+        }
 
         /*内容-成为会员—身体—尾部——事项声明*/
 
         /*尾部地图*/
+
         /*尾部手风琴*/
 
     </style>
@@ -177,7 +221,7 @@
             <div class="member_step">
                 <ul>
                     <li>
-                        步骤① <br/>
+                        步骤①<br/>
                         <img src="img/vipstep_1.png" alt=""/>
                     </li>
                     <li>
