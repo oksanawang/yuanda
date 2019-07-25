@@ -1,0 +1,233 @@
+ @media screen and (min-width:992px){
+ 
+ /* 整体公共样式*/
+ body{
+    margin:0;
+    padding:0;
+    width:100%;height:2785px;
+    background:#f7f7f7;
+    font-family:微软雅黑;
+    /*display: block;*/
+    box-sizing:border-box;
+    /*float:left;*/
+}
+div{
+    margin:0 auto;
+}
+/*成为会员公共样式*/
+.sub_container{
+    width:1200px;height:2785px;
+}
+/*头部样式*/
+/*头部手风琴目录*/
+/*中间-成为会员—头部*/
+.title{
+    padding:100px 0px 20px 0px;
+    width:100%;
+    font-size:25px;
+    font-weight:lighter;
+    line-height:32px;
+    text-align:center;
+    border-top:1px solid #ccc;
+}
+/*内容-成为会员——身体*/
+/*成为会员整体样式*/
+#vip_member{
+    width:100%;
+    /*height:2162px;*/
+    background:#005cbf;
+    float:left;
+    text-align:center;
+}
+li{list-style:none;}
+/*内容-成为会员—身体—头——扫码绑定*/
+#vip_member>h1{
+    width:100%;
+    box-sizing:border-box;
+    line-height:90px;
+    font-size:36px;
+    text-align:center;
+    float:left;
+    letter-spacing:0.3rem;/*字与字之间的空隙*/
+    color:#262626;
+}
+  /*内容-成为会员—身体—中间——购物积分等6个*/
+.member_gn{
+    width:77%;
+    /*height:261px;*/
+    background:#0000ff;
+    text-align:center;
+    float:left;
+    padding:0 11.5%;
+}
+.member_gn ul{
+    padding:0;
+    margin:0;
+}
+.member_gn li:first-child{
+    width:55%;
+    background: #3f6dff;
+    float:left;
+    padding:0;
+    box-sizing:border-box;
+}
+.member_gn li:last-child{
+    width:45%;
+    background: #ff50fe;
+    float:left;
+}
+.member_gn span{
+    float:left;
+    width:45%;
+    border:1px solid #989898;
+    background: #e4ebee;
+    margin-bottom:10px;
+    margin-right:10px;
+    padding:20px 0;
+    border-radius:6px;
+    color:#666;
+    font:normal bold 22px "微软雅黑";
+}
+.member_gn dd{
+    display:block;
+    float:left;
+    padding:38.5px 0;;
+}
+.member_gn dt{
+    display:block;
+    float:left;
+    text-align:left;
+    line-height:40px;
+    padding:50px 0;
+    /*font:bold 20px "微软雅黑";这样写没有行之间的间距*/
+    font-size:20px;
+    font-weight:bold;
+    color:#666;
+    margin-left:10px;
+}
+/*内容-成为会员—身体—中间——取消卡*/
+.member_gnline{
+    width: 77%;
+    /*height: 55px;*/
+    background:#ccc;
+    color:#333;
+    font-size:20px;
+    line-height:55px;
+    text-align:center;
+    float:left;
+    padding:0 11.5%;
+    display:block;
+    border-radius:6px;
+    margin:30px 0;
+}
+/*内容-成为会员—身体—中间——微信注册流程字体*/
+.member_gn>h1{
+    width:77%;
+    color:#262626;
+    line-height:90px;
+    text-align:center;
+    float:left;
+    padding:0 11.5%;
+}
+
+/*内容-成为会员—身体—尾部——步骤图片*/
+.member_step{
+    /*float:left;*/
+    width:100%;
+    background-color:#34ce57;
+    color:#666;
+    font-size:20px;
+}
+.member_step ul{
+    width:77%;
+    background-color:#34ce57;
+    margin:0 8%;
+}
+.member_step ul li{
+    float:left;
+    width:30%;
+    margin:5% 0 40px 5%;
+}
+.member_step ul li img{
+    width:100%;
+    color:#666;
+    font-size:20px;
+    float:left;
+}
+#img1,#img4{
+    margin-left:0;
+}
+ 
+
+/*内容-成为会员—身体—尾部——table表格?????*/
+.member_step table{
+    width:100%;
+    float:left;
+    border:1px solid #b7b7b7;
+    text-align:center;
+    border-collapse:collapse;
+}
+.member_step table tr{
+    text-align:center;
+    border:1px dotted #999;
+}
+.member_step table tr .tr-blod{
+    font-weight:bold!important;
+}
+.member_step table tr td{
+    text-align:center;
+    border:1px dashed #999;
+    line-height:40px;
+    font-size:15px;
+    margin:5% 1%;
+}
+
+/*内容-成为会员—身体—尾部——事项声明*/
+/*温馨提示*/
+.tips{
+    display:block;
+    float:left;
+    width:11%;
+    border:1px solid #ddd;
+    font-size:14px;
+    text-align:center;
+    line-height:30px;
+    border-radius:13px;
+    color: #333;
+    font-weight:bold;
+    margin-top:25px;
+    margin-bottom:5px;
+}
+.dashed1{
+    display:block;
+    float:left;
+    width:4%;
+    border:1px dashed #ddd;
+    margin-top:42px;
+    margin-bottom:20px;
+}
+.dashed2{
+    display:block;
+    float:left;
+    width:84.3%;
+    border:1px dashed #ddd;
+    margin-top:42px;
+    margin-bottom:20px;
+}
+/*事项声明*/
+.tips_text{
+    margin:20px 0;
+    width:90%;
+    display:block;
+    float:left;
+    text-align:left;
+    font-size:12px;
+    color:#666;
+    line-height:20px;
+}
+
+
+/*尾部地图*/
+
+/*尾部手风琴*/
+}
