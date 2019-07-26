@@ -157,9 +157,16 @@ li{list-style:none;}
 #img1,#img4{
     margin-left:0;
 }
- 
+ /*空div增加高度*/
+ .member_step null{
+    width:100%;
+    height:30px;
+    float:left;
+    background:#34ce57;
+    padding:2%;
+ }
 
-/*内容-成为会员—身体—尾部——table表格?????*/
+/*内容-成为会员—身体—尾部——table表格*/
 .member_step table{
     width:100%;
     float:left;
@@ -180,6 +187,10 @@ li{list-style:none;}
     line-height:40px;
     font-size:15px;
     margin:5% 1%;
+}
+.member_step table tr td strong{
+    padding:20px;
+    line-height: 2%;
 }
 
 /*内容-成为会员—身体—尾部——事项声明*/
@@ -202,15 +213,15 @@ li{list-style:none;}
     display:block;
     float:left;
     width:4%;
-    border:1px dashed #ddd;
+    border-bottom:1px dashed #ddd;
     margin-top:42px;
     margin-bottom:20px;
 }
 .dashed2{
     display:block;
     float:left;
-    width:84.3%;
-    border:1px dashed #ddd;
+    width:84.7%;
+    border-bottom:1px dashed #ddd;
     margin-top:42px;
     margin-bottom:20px;
 }
