@@ -154,9 +154,13 @@ li{list-style:none;}
     font-size:20px;
     float:left;
 }
-#img1,#img4{
+#img4,#img5,#img6{
+    
+}
+#img4,#img4{
     margin-left:0;
 }
+
  /*空div增加高度*/
  .member_step null{
     width:100%;
