@@ -1,0 +1,69 @@
+/* 整体公共样式*/
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    background:#f7f7f7;
+    font-family:微软雅黑;
+    display: block;
+    box-sizing:border-box;
+    float:left;
+}
+div{
+    margin:0 auto;
+}
+/*大屏*/
+@media screen and (min-width:1201px){
+    /*头部样式*/
+    .header{
+        width:100%;height:60px;
+        background:#262626;
+        display:flex;
+        flex-direction:row;
+        justify-content:between;	
+        text-align:center;
+        line-height:60px;
+        list-style: none;
+        /* display: block; */
+    }
+    
+    .header>ul>li{
+    
+    
+    }
+    ul>li{
+        display: block;
+        margin:0;
+        padding: 0;
+        list-style: none;
+        overflow:hidded;
+    }
+    ul>subs{
+        display: block;
+        margin:0;
+        padding: 0;
+    }
+    #nlogo{
+        width:130px;height:50px;
+        background:#ff0;
+        line-height:50px;
+    }
+    .header a{
+        width:100px;height:50px;
+        display: block;
+        background:#0e1575;
+        color:#ccc;
+        text-decoration:none;
+        margin:0;
+        padding: 0;
+        
+    }
+    .header a::hover{
+        
+        background:red;
+        color:#ccc;
+        text-decoration:none;
+        
+    }
+    
+}    
