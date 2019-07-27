@@ -3,70 +3,85 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8">	
-		<style>
-			/*头部样式*/
-			.head{
-				width:100%;height:60px;
-				background:#262626;
-				display:flex;
-				flex-direction:row;
-				justify-content:center;	
-			}
-			.head a{
-				
-				width:130px;height:50px;
-				color:#fff;
-				text-decoration:none;
-			}
-
-
-
-
-
-			/*VIP登陆样式*/
-			.vipkhcx{
-			width:400px;height:400px;
-				background:#e8e8e8;
-				}
-				div>h5{
-					border-bottom:dashed;	
-				}
-
-
-				/*页尾*/
-				.footermap{
-				width:100%;height:145px;
-				background:#262626;
-				display:flex;
-				flex-direction:row;
-				justify-content:center;
-				list-style:none;
-				font:12px gigi #999;
-				
-			}
-			.footermap li{
-				width:140px;height:25px;
-			}
-			.footermap a{
-				color:#999;
-				font-size:12px;
-				text-decoration:none;
-				
-			}
-		</style>
+		<link rel="stylesheet" href="css/vip_card.css">
 	</head>
 	<body>
 		<!-- 头部 -->
-		<div class="head">
-			<div><a id="sy" href="#">首页</a></div>
-			<div><a id="hdzx" href="#">活动咨询</a></div>
-			<div><a id="ppss" href="#">品牌搜索</a></div>
-			<div><a id="xxcy" href="#">休闲餐饮</a></div>
-			<div><a id="VIPhy" href="#">VIP会员</a></div>
-			<div><a id="fwss" href="#">服务设施</a></div>
-			<div><a id="jrwm" href="#">加入我们</a></div>
-			<div><a id="ydsy" href="#">远大商业</a></div>
-		</div>
+		<ul>
+			<div class="">
+				<ul class="header">
+					<!-- 顶部空白返回首页 -->
+					<div id="nlogo">
+						<a href=""></a>
+					</div>
+					<li>
+						<a id="sy" href="#">首页</a>
+					</li>
+					<li>
+						<a id="hdzx" href="#">活动咨询</a>
+						<span id="s1"></span>
+						<ul class="subs">
+							<li><a href="#">活动</a></li>
+							<li><a href="#">时尚</a></li>
+							<li><a href="#">美妆</a></li>
+							<li><a href="#">美食</a></li>
+							<li><a href="#">生活</a></li>
+							<li><a href="#">回顾</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="ppss" href="#">品牌搜索</a>
+						<span id="s2"></span>
+						<ul class="sybs">
+							<li><a href="#">品牌搜索</a></li>
+							<li><a href="#">新进品牌</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="xxcy" href="#">休闲餐饮</a>
+						<span id="s3"></span>
+						<ul class="sybs">
+							<li><a href="#">休闲餐厅</a></li>
+							<li><a href="#">热门推荐</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="VIPhy" href="#">VIP会员</a>
+						<span id="s4"></span>
+						<ul class="sybs">
+							<li><a href="#">积分查询</a></li>
+							<li><a href="#">成为会员</a></li>
+							<li><a href="#">特约商户</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="fwss" href="#">服务设施</a>
+						<span id="s5"></span>
+						<ul class="sybs">
+							<li><a href="#">店内服务</a></li>
+							<li><a href="#">停车场</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="jrwm" href="#">加入我们</a>
+						<span id="s6"></span>
+						<ul class="sybs">
+							<li><a href="#">招聘流程</a></li>
+							<li><a href="#">招聘信息</a></li>
+						</ul>
+					</li>
+					<li>
+						<a id="ydsy" href="#">远大商业</a>
+					</li>
+					<div>
+						营业时间：9:00-21:30
+						<a href=""></a>
+						<a href=""></a>
+					</div>
+				</ul>
+			</div>
+		</ul>
+
 		<!--VIP登陆页面  -->
 		<div>
 			<p>VIP积分查询<p>
@@ -84,10 +99,10 @@
 					</div>
 						<div>
 							<button class="viptijiao">积分查询</button>
-								<p>
-									<a class="vipzhengche"href="">扫码查询</a>
-									<a class="vipzhengche2"href="">查看VIP积分政策</a>
-								</p>
+							<p>
+								<a class="vipzhengche" href="">扫码查询</a>
+								<a class="vipzhengche2" href="">查看VIP积分政策</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -108,7 +123,7 @@
 						<li><a href="#">地理位置</a></li>
 						<li><a href="#">精彩回顾</a></li>
 						<li><a href="#">获得荣誉</a></li>
-						</li><a href="#">联系方式</a></li>
+						<li><a href="#">联系方式</a></li>
 					</div>
 					<div>
 						<li><a href="#">百货招商</a></li>

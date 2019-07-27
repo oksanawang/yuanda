@@ -1,0 +1,12 @@
+
+vip_member.html问题集合
+
+1.     vip_member.html 页面有问题——>成为会员下面缺一个横线
+2.     vip_member.html 大屏在1340左右，所有样式失效。
+3.     vip_member.html table需要在微调
+4.     vip_member.html 媒体查询大小分区写的是1200，但是实际是在1300在变化的
+5.     vip_member.html table上方需要一个空白高，可以加一个div包裹一下试试
+6.     vip_member.html 扫码成为会员的字体大小应该是有问题的，大屏下
+
+
+       vip_card.html 营业时间下面写了两个a标签，不知道干嘛的
