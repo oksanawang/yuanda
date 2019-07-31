@@ -27,10 +27,8 @@ div{
         /* display: block; */
     }
     
-    .header>ul>li{
-    
-    
-    }
+    /*.header>ul>li{
+    }*/
     ul>li{
         display: block;
         margin:0;
