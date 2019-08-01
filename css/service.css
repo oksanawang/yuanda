@@ -1,0 +1,28 @@
+/* 整体公共样式*/
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    background:#f7f7f7;
+    font-family:微软雅黑;
+    display: block;
+    box-sizing:border-box;
+    float:left;
+}
+div{
+    margin:0 auto;
+}
+/*大屏*/
+@media screen and (min-width:1199px){
+.container{
+    width:1200px;
+    background: #f0f;
+}
+.list_bady{
+    width:100%;
+    background:#0f0;
+    border:1 solid #d5d5d5;
+    line-height:100px;
+}
+
+}
