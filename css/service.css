@@ -19,7 +19,7 @@ div{
     background: #f0f;
 }
 .list_body{
-    width:100%;
+    width:45%;
     height:130px;
     background-color:#0f0;
     border:1 solid #d5d5d5;
@@ -27,7 +27,19 @@ div{
     padding:0px;
     display: block;
     list-style: none;
-    /* float:left; */
+    float:left;
 }
-
+.list_body>img{
+    width:90px;
+    height:90px;
+    /* line-height: 90px; */
+    display:float;
+    
+}
+.list_div{
+    width:100px;
+    height:110px;
+    float:left;
+    display:block;
+}
 }
