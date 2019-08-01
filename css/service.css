@@ -7,7 +7,7 @@ body{
     font-family:微软雅黑;
     display: block;
     box-sizing:border-box;
-    float:left;
+    /* float:left; */
 }
 div{
     margin:0 auto;
@@ -18,11 +18,16 @@ div{
     width:1200px;
     background: #f0f;
 }
-.list_bady{
+.list_body{
     width:100%;
-    background:#0f0;
+    height:130px;
+    background-color:#0f0;
     border:1 solid #d5d5d5;
-    line-height:100px;
+    line-height:40px;
+    padding:0px;
+    display: block;
+    list-style: none;
+    /* float:left; */
 }
 
 }
