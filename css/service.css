@@ -7,7 +7,7 @@ body{
     font-family:微软雅黑;
     display: block;
     box-sizing:border-box;
-    /* float:left; */
+    float:left;
 }
 div{
     margin:0 auto;
@@ -21,10 +21,11 @@ div{
 .list_body{
     width:45%;
     height:130px;
-    background-color:#0f0;
-    border:1 solid #d5d5d5;
+    background-color:#fff;
+    border:1px solid #d5d5d5;
     line-height:40px;
-    padding:0px;
+    margin-right:15px;
+    margin-bottom:20px;
     display: block;
     list-style: none;
     float:left;
@@ -33,13 +34,30 @@ div{
     width:90px;
     height:90px;
     /* line-height: 90px; */
-    display:float;
+    float:left;
     
 }
 .list_div{
-    width:100px;
-    height:110px;
+    width:48%;
+    height:100px;
     float:left;
     display:block;
+    color:#262626;
+    font-size:13px;
+}
+.list_div dt{
+    margin:0;
+    color:#999;
+    font-size:20px; 
+}
+.list_div dd{
+    margin:0;
+    color:#999;
+    font-size:15px; 
+}
+.list_div dd img{
+    width:20px;
+    height:20px;
+    margin:0;
 }
 }
