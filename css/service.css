@@ -80,8 +80,7 @@ p{
 .list_body>p{ 
     width:90px;
     height:90px;
-    /* float:left; */
-    background-image:url("images/service_icon.jpg");
+    background-image:url("../images/service_icon.jpg");
     background-repeat:no-repeat;
     margin-left:0;
     padding:0;
@@ -89,7 +88,93 @@ p{
     border:1px solid red;  
 }
 .sprite1{
-    background-image:url("images/service_icon.jpg");
+    background-position:0px 0px;
+}
+.sprite2{
+    background-position:-90px 0px;
+}
+.sprite3{
+    background-position:0px 0px;
+}
+.sprite4{
+    background-position:0px 0px;
+}
+.sprite5{
+    background-position:0px 0px;
+}
+.sprite6{
+    background-position:0px 0px;
+}
+.sprite7{
+    background-position:0px 0px;
+}
+.sprite8{
+    background-position:0px 0px;
+}
+.sprite9{
+    background-position:0px 0px;
+}
+.sprite10{
+    background-position:0px 0px;
+}
+.sprite11{
+    background-position:0px 0px;
+}
+.sprite12{
+    background-position:0px 0px;
+}
+.sprite13{
+    background-position:0px 0px;
+}
+.sprite14{
+    background-position:0px 0px;
+}
+.sprite15{
+    background-position:0px 0px;
+}
+.sprite16{
+    background-position:0px 0px;
+}
+.sprite17{
+    background-position:0px 0px;
+}
+.sprite18{
+    background-position:0px 0px;
+}
+.sprite19{
+    background-position:0px 0px;
+}
+.sprite20{
+    background-position:0px 0px;
+}
+.sprite21{
+    background-position:0px 0px;
+}
+.sprite22{
+    background-position:0px 0px;
+}
+.sprite23{
+    background-position:0px 0px;
+}
+.sprite24{
+    background-position:0px 0px;
+}
+.sprite25{
+    background-position:0px 0px;
+}
+.sprite26{
+    background-position:0px 0px;
+}
+.sprite27{
+    background-position:0px 0px;
+}
+.sprite28{
+    background-position:0px 0px;
+}
+.sprite29{
+    background-position:0px 0px;
+}
+.sprite30{
     background-position:0px 0px;
 }
 .list_body:nth-child(2n+1){
