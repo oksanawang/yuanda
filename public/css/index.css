@@ -13,51 +13,222 @@ body{
 .container{
     width:1200px;
     text-align:center;
+    margin:0 auto;
 }
-.banner_big{
-    background-color:blue;
-    /* display:none; */
-    width:100%;
-    margin:0;
-    padding:0;
-    text-align: center;
-}
-a{
-    text-decoration: none;
-    color:#555;
-    font-size:15px;
-}
-img{
-    /* display:none; */
-}
-/* 资讯 */
-.information{
-    /* background-color:red; */
-    width:1200px;height:40px;
-    line-height: 40px;
-    font-size:20px;
-    text-align:center;
-    border-bottom:1px solid #d5d5d5;
-}
-.first_floor{
-    text-align:left;
-    width:100%;
-}
-.first_floor p{
-    font-size:13px;
-    color:#999;
-    margin:10px;
-}
-.yd_class{
-    width:49.5%;
-    float: left;
-    border:1px solid #ddd;
-}
-.yd_nocard{
-    width:49.5%;
-    float:right;
-    border:1px solid #ddd;
-}
-.yd_nocard p{
-    margin-left:10px;
+/* 大屏 */
+@media screen and (min-width:1201px){
+    .banner_big{
+        background-color:blue;
+        /* display:none; */
+        width:100%;
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color:#555;
+        font-size:15px;
+    }
+    img{
+        /* display:none; */
+    }
+    /* 资讯 */
+    .information{
+        width:1200px;height:40px;
+        line-height: 40px;
+        font-size:20px;
+        text-align:center;
+        border-bottom:1px solid #d5d5d5;
+        font-weight:bold;
+        margin-bottom:20px;
+    }
+    .first_floor{
+        text-align:left;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+    }
+    .first_floor p{
+        font-size:13px;
+        color:#999;
+        margin:0px;
+        font-weight:bold;
+    }
+    .yd_class{
+        border:1px solid #ddd;
+        height:365px;
+    }
+    /* .yd_nocard{
+        border:1px solid #ddd;
+        height:365px;
+    } */
+    .yd_class p:nth-child(3){
+        margin:10px 0px 3px 15px;   
+    }
+    .yd_class p:nth-child(4){
+        margin:0px 0px 0px 15px;  
+        font-weight: lighter;
+    }
+    like_heart{
+        color: #666;
+        display: inline;
+        position:absolute;
+        top:0;
+        right:0;
+        z-index: 1;
+        font-size:10px;
+        text-transform:uppercase;
+        text-align:center;
+        width:0;
+        height:0;
+        background-color:blue;
+        /* position:absolute; */
+        font-size:10px;
+        border-top:70px solid #fff;
+        border-left: 70px solid transparent;
+    }
+    .flag-text {
+        color: #666;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+        font-size: 10px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 0;
+        height: 0;
+        border-top: 70px solid #fff;
+        border-left: 70px solid transparent;
+    }
+    /*点赞 */
+    .flag-text::after {
+        content: "❤";
+        width: 15px;
+        color: rgb(189, 177, 169);
+        height: 15px;
+        position: absolute;
+        z-index: 2;
+        top: -70px;
+        left: -30px;
+        right: 0px;
+        font-size: 15px;
+    }
+    .like_heart::after {
+        content:"❤";
+        width:15px;
+        height:15px;
+        color: rgb(189, 177, 169);
+        position:absolute;
+        z-index: 2;
+        top:-70px;
+        left:-30px;
+        right: 0;
+        font-size:15px;
+    }
+
+    /* <!-- 时尚美妆  2F-->  3f美食生活 */
+    .second_floor{
+        text-align:left;
+        width:100%;
+    }
+    .second_floor p{
+        font-size:13px;
+        color:#999;
+        margin:0px;
+        width:1200px;
+    }
+    /* 美妆-文字    -----美食文字*/
+    .fashion{
+        width:1200px;
+        height:60px;
+        line-height: 60px;
+        border:border-box;      
+    }
+    .fashion p,.fashion>.fashion-p{
+        float: left;
+        width:48%;
+        text-align:right;
+        font-size:20px;
+        font-weight:bold;
+        color:#333;
+        padding-right:15px;
+    }
+    .fashion>.fashion-p{
+        width:41.5%;
+        text-align:left;
+        font-weight: lighter;
+        padding:0 0 0 15px;
+    }
+    .fashion>.fashion>:nth-child(2){
+        color: #CA0915;
+    }
+    .fashion>.fashion-p1{
+        float: left;
+        width:8%;
+        text-align:right;
+        padding:0;
+    }
+    .fashion>.fashion-p1>a,.fashion>.fashion-p1>span{
+        color:#666;
+        font-size:13px;
+        font-weight:lighter;
+        padding-right:5px;
+    }
+    .fashion>.fashion-p1>a:last-child{
+        padding:0px;
+    }
+    .fashion>.fashion-p1>a:hover{
+        color:rgb(236, 35, 35);
+        cursor: pointer;
+    }
+    /* 美妆-图片   ----美食图片 */
+    .fashion_pic{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin:0;
+        padding:0;
+    }
+    .fashion_pic_4{
+        width: 270px;
+        border:1px solid #ddd;
+        margin-right:20px;
+        overflow: hidden;
+        
+    }
+    .fashion_pic_4>p>a>img{
+        width:270px;
+        height:270px;
+    }
+    .fashion_pic>.food_pic_4>p>a>img{
+        width:270px;
+        height:270px;
+    }
+    .fashion_pic_4:nth-child(2){
+        font-weight: bold;
+        font-size:15px;
+    }
+    .fashion_pic_4:nth-child(3){
+        font-weight:lighter; 
+    }
+    .fashion_pic_4:nth-child(4){
+        margin-right:0px;
+    }
+    .fashion_pic_4>p:nth-child(2){
+        font-weight:bold;
+        display: inline-block;
+        cursor: pointer;
+        width:250px;
+        margin-left:15px;
+    }
+    .fashion_pic_4>p:nth-child(3){
+        font-weight:lighter;
+        width:250px;
+        padding-left:15px;
+        margin-bottom: 20px;
+    }
+    
 }
