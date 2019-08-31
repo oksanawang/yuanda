@@ -5,9 +5,11 @@ body{
     width:100%;
     background:#f7f7f7;
     font-family:微软雅黑;
-    display: block;
+    /* display: block; */
     box-sizing:border-box;
-    float:left;
+    /* float:left; */
+    display:flex;
+    justify-content: space-between;
 }
 div{
     margin:0 auto;
@@ -34,10 +36,11 @@ div{
         list-style: none;
         overflow:hidded;
     }
-    ul>subs{
+    ul.subs,ul.sybs{
         display: block;
         margin:0;
         padding: 0;
+        display:none;
     }
     #nlogo{
         width:130px;height:50px;
@@ -47,19 +50,29 @@ div{
     .header a{
         width:100px;height:50px;
         display: block;
-        background:#0e1575;
+        background:#5961d3;
         color:#ccc;
         text-decoration:none;
         margin:0;
         padding: 0;
         
     }
-    .header a::hover{
-        
-        background:red;
+    .header li a:hover{
+        background-color:red;
         color:#ccc;
         text-decoration:none;
-        
     }
-    
+    .header li:hover ul.subs,.header li:hover ul.sybs{
+        display: block;
+    }
+    .time{
+        display: flex;
+
+    }
+    .header div.wxgz{
+        display:none;
+    }
+    .header div.wxgz:hover{
+        display:block;
+    }
 }

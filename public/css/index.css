@@ -70,7 +70,7 @@ body{
         margin:0px 0px 0px 15px;  
         font-weight: lighter;
     }
-    like_heart{
+    .like_heart{
         color: #666;
         display: inline;
         position:absolute;
@@ -83,7 +83,6 @@ body{
         width:0;
         height:0;
         background-color:blue;
-        /* position:absolute; */
         font-size:10px;
         border-top:70px solid #fff;
         border-left: 70px solid transparent;
