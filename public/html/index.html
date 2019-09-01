@@ -7,32 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/public/css/index.css">
+    <!-- <link rel="stylesheet" href="/public/css/header.css"> -->
+    <!-- <link rel="stylesheet" href="/public/html/header.html"> -->
+    <link rel="import" href="header.html" id="myheader">
+    
 </head>
-
 <body>
+    <!-- <header>
+        <iframe class="my_header" scrolling="no" src="header.html" frameborder="0"></iframe>
+    </header> -->
+    <!-- <script type="text/css">
+        console.log(myheader.impoert.body.innerHTML);
+    </script> -->
     <div class="container">
         <!-- 首页大轮播图 -->
-        <div class="banner_big">
-            <!-- <div>
-                <a href="javascript:;">
-                    <img src="/public/pic/uploadfile/2019/08/16/20190816103035146.jpg" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="javascript:;">
-                    <img src="/public/pic/uploadfile/2019/08/16/20190816140135878.jpg" alt="">  
-                </a>
-            </div> -->
-            <div>
-                <a href="javascript:;">
-                    <img src="/public/pic/uploadfile/2019/06/24/20190624142906692.jpg" alt="">
-                </a>
-            </div>
-            <!-- <div>
-                <a href="javascript:;">
-                    <img src="/public/pic/uploadfile/2017/12/26/20171226092506328.jpg" alt="">  
-                </a>
-            </div> -->
+        <div id="banner">
+            <ul id="ul-imgs" style="width:5000px; margin-left:0px;">
+                <li><a href="javascript:;"><img src="/public/pic/uploadfile/2019/08/16/20190816103035146.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="/public/pic/uploadfile/2019/08/16/20190816140135878.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="/public/pic/uploadfile/2019/06/24/20190624142906692.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="/public/pic/uploadfile/2017/12/26/20171226092506328.jpg" alt=""></a></li>
+                <!--注意！最后li个数要比实际图片张数多1，最后一个li里的img是重复第一张li的图片-->
+                <li><a href="javascript:;"><img src="/public/pic/uploadfile/2019/08/16/20190816103035146.jpg" alt=""></a></li>
+            </ul>
+            <lu id="ul-idxs">
+                <!--虽然li个数比实际图片张数多1，但小圆点的个数不必多1-->
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </lu>
         </div>
         <!-- 资讯 -->
         <div>
