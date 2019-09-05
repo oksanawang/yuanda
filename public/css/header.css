@@ -25,10 +25,15 @@ div{
         line-height:60px;
         list-style: none;
         font-size:15px;  
+        position: absolute;
+        /* z-index: 100; */
+        top:0;
+        left:0;
     }
     /* 返回首页的logo */
     .nlogo{
-        width:180px;height:50px;
+        width:180px;
+        height:50px;
         line-height:50px;
         background-color:yellow;
         margin:auto 0;
@@ -126,10 +131,17 @@ div{
         color:#777;
         text-decoration: none;
     }
+    .time a img{
+        width:30px;
+        height:50px;
+        background:red;
+        display: block;
+        line-height: 50px;
+    }
     .header div a img{
         display:none;
     }
-    .header div a:hover img{ 
+    .header .time a:hover img{ 
         display:block;
     } 
 }

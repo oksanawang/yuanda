@@ -17,8 +17,6 @@ div{
     .container{
         width:1200px;
         font-weight: lighter;
-
-
     }
     .vip-body{
         border-bottom: 1px dashed #ccc;
@@ -30,21 +28,198 @@ div{
         height:32px;
         line-height: 32px;
         font-size: 25px;
-        background:yellowgreen;
         margin-top:100px;
         padding-bottom:20px;
         text-align: center;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #ccc; 
     }
     .vip-vip{
         width:100%;
         display: flex;
+        justify-items: left;
+        justify-content: flex-start;
+    }
+    /* 右侧图片登录 */
+    ul{
+        margin-left:0;
+    }
+    .vipydlogo{
+        padding-top:100px;
+        width:45%;
+        height:400px;
+        background: yellow;
+        margin-bottom: 40px;
+        box-sizing:border-box;
+        text-align: center;  
+        margin:0;    
+    }
+   .vipkhcx{
+        background: #ebebeb;
+        color:#262626;
+        font-weight: lighter;
+        width:45%;
+        height:400px;
+        text-align: left;
+        vertical-align: middle;
+        margin:0;
+        margin-bottom: 40px;
+        box-sizing:border-box;
+        list-style: none;
+        box-shadow:25px 0 0 0px #ebebeb, 25px 0 0 10px #e1e1e1;
+        z-index: 1;
+    }
+    .vipkhcx_li1{
+        display: flex;
+        justify-content: space-around;
+        position:relative;
+
+    }
+    .vipkhcx_li1 h3{
+        font-size:32px;
+        letter-spacing: 0.6rem;
+    }
+    .vipkhcx_li1 div img{
+        position: absolute;
+        top:0;
+        right: -25px;
+        margin-right: 0;
+    }
+    .vipkhcx_li2{
+        box-sizing: border-box;
+        border-bottom:1px dashed #262626;
+        border-top:1px dashed #262626;
+        padding:20px 0px 10px 80px;
+        width:100%;
+        font-size:13px;
+        height:165px;
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 40px;
+        padding-right:20px;
+        margin:0;
+    } 
+    .vipkhcx_li2 input{
+        background:#ebebeb;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #000;
+        cursor: pointer;
+        height:30px;
+        width:65%;
+        vertical-align: middle;
+    }
+    .vipkhcx_li2 .yanzhengma{
+        width:15%;
+    } 
+    .vipkhcx_li2 span{
+        font-weight: normal;
+     }
+    .vipkhcx_li3{
+        text-align: center;
+        padding-top:20px;
+    }
+    button{
+        width:80px;
+        height:30px;
+        border-radius: 6px;
+        background:#262626;
+        color:#fff;
+        margin-top:10px;
+        font-size: 12px;
+    }
+    .vipkhcx_li3 a{
+        line-height: 20px;
+        font-size:13px;
+        color:#262626;
+        cursor: pointer;
+        /* margin-right:20px; */
+    }
+    .vipzhengche:hover{
+        text-decoration-line: none;
+    }
+    .vipkhcx_li3 a:nth-child(2){
+        color: #ca0915;
+        margin-left:20px;
+    }
+    .vipkhcx_li3 a:nth-child(2):hover{
+        color: #262626;
+        text-decoration-line: none;
+    }
+    /* 右侧手机扫码查询 */
+    .vipsjsm{
+        width:45%;
+        height:400px;
+        background:#e1e1e1;
+        margin:0 0 40px 0;
+        text-align: center;
+        box-sizing: border-box;
+        font-weight:lighter;
+        box-shadow: 25px 0 0 0px #ebebeb, 25px 0 0 10px #e1e1e1;
+    }
+    .vipsjsm div:nth-child(1){
+        height:100px;
+        background: #ca0915;
+        position: relative;
+        display: flex;
         justify-content: space-between;
+        font-size:32px;
+        border-bottom:1px dashed #999;
+    }
+    .vipsjsm div div img{
+        position: absolute;
+        top:0;
+        right: -25px;
+        margin: 0;
+        background: #262626;
+    }
+    .vipsjsm div+div img{
+        width:130px;
+        height:130px;
+        margin-top:30px;
+    }
+    .vipsjsm div:nth-child(3){
+        width:33px;
+        height: 33px;
+        line-height: 33px;
+        box-sizing:border-box;
+    }
+    .vipsjsm div:nth-child(3) img{
+        width:33px;
+        height: 33px;
+        margin-top:20px;
+    }
+    .vipsjsm span{
+        /* display: inline; */
+        width: 100%;
+        height: 33px;
+        line-height: 33px;
+        background: #262626;
+        font-size: 13px;
+        padding-top:10px;
+    }
+    .vipsjsm a{
+        /* display: flex; */
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #ca0915;
+        font-size: 13px;
+        margin-top:40px; 
+        cursor: pointer;
+    }
+    .vipsjsm strong{
+        font-weight: normal;
+    }
+    .vipsjsm a:hover{
+        text-decoration-line: none;
+        color:#262626;
     }
     .container .vip-info{
-        width:96%;
+        width:97%;
         height:200px;
         background:yellowgreen;
         vertical-align: middle;
+        letter-spacing: 0.2rem;
     }
 }
