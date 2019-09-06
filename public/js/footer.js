@@ -1,0 +1,9 @@
+(function(){
+    $.ajax({
+        url:'../html/footer.html',
+        type:'get',
+        success:function(res){
+            $('#footer').html(res);
+        }
+    });
+})();
