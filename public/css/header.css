@@ -9,9 +9,11 @@ body{
     display:flex;
     justify-content: space-between;
     text-align: center;
+    height: 100%;
 }
 div{
-    margin:0 auto;
+    margin:0;
+    padiing:0;
 }
 /*大屏*/
 @media screen and (min-width:1201px){
@@ -29,71 +31,80 @@ div{
         list-style: none;
         font-size:15px;  
         position: absolute;
-        /* z-index: 100; */
+        z-index: 100;
         top:0;
         left:0;
-        padding-left:5%;
-        padding-right:5%;
     }
     /* 返回首页的logo */
     .nlogo{
-        width:180px;
+        box-sizing: border-box;
+        width:15%;
         height:50px;
         line-height:50px;
         margin:auto 0;
+        /* text-align: center; */
     }
     .header .nlogo a{
-        width:180px;
         height:50px;
         line-height:50px;
         display: flex;
+        text-align:right;
+        /* padding-left:20%; */
     }
     /* 导航条 */
-    .header li{
+    .header_bar{
+        width:1200px;
+        display: flex;
+        justify-content: space-between;
+        padding-left:0;
+    }
+    .header_bar li{
         display:block;
         margin:0;
         padding: 0;
         color:#fff;
-        width:100px;
+        width:100%;
         height:50px;
     }
-    .header li:hover .ydsy,
-    .header li:hover .sy,
-    .header li:hover .hdzx,
-    .header li:hover .ppss,
-    .header li:hover .xxcy,
-    .header li:hover .VIPhy,
-    .header li:hover .fwss,
-    .header li:hover .jrwm{
+    .header_bar li:hover .sy,
+    .header_bar li:hover .hdzx,
+    .header_bar li:hover .ydsy,
+    .header_bar li:hover .ppss,
+    .header_bar li:hover .xxcy,
+    .header_bar li:hover .VIPhy,
+    .header_bar li:hover .fwss,
+    .header_bar li:hover .jrwm{
         display:block;
         overflow: none;
         background-color:red;
-        width:100px;
         height:50px;
         transition:background-color 1s;
         color:#fff;
+        text-align: center;
     }
-    .header li:hover .ydsy,
-    .header li:hover .sy{
+    .header_bar li:hover .ydsy,
+    .header_bar li:hover .sy{
         height:59px;
     }
-    .header li a{
+    .header_bar li a{
         display: block;
         color:#ccc;
         text-decoration:none;
         margin:0;
         padding: 0;  
+        font-size:15px;
     }
-    .header li span{
+    .header_bar li span{
         display: block;
         height:10px;
         line-height: 10px;
+        width: 100%;
     }
-    .header li:hover span{
+    .header_bar li:hover span{
         background-color:#fff;
     }
-    .header li ul li{
-        width:100px;
+    .header_bar li ul li{
+        width:100%;
         height:40px;
         text-align:center;
         box-sizing: border-box;
@@ -101,27 +112,31 @@ div{
         padding:auto 0;
         margin:auto 0px;
     }
-    .header li ul li a{
+    .header_bar li ul li a{
         color:#777;
         font-size:14px;
+        font-weight: normal;
     }
-    .header li ul li a:hover{
+    .header_bar li ul li a:hover{
         color:rgba(230, 34, 34, 0.856);
     }
-    .header li ul{
+    .header_bar li ul{
         display: block;
         margin:0;
         padding: 0;
         background-color:#fff;
+        text-align: center;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     }
-    .header li .subs,
-    .header li .sybs{
+    .header_bar li .subs,
+    .header_bar li .sybs{
         display: none;
     }
-    .header li:hover .subs,
-    .header li:hover .sybs{
+    .header_bar li:hover .subs,
+    .header_bar li:hover .sybs{
         display:block;
     }
+    /* 导航文字 */
     .time{
         box-sizing: border-box;
         color:#777;
@@ -129,16 +144,35 @@ div{
         margin:0px;
         height:50px;
         padding-bottom:20px;
+        width: 15%;
+        height: 60px;
+        display: flex;
+
+        /* justify-content: flex-start; */
+        justify-content: start;
     }
     .time span{
         display: inline-block;
+        /* display: flex; */
+        /* overflow: flex;
+        flex-wrap: nowrap;
+        overflow-wrap: unset;
+        word-wrap: break-word; */
+        word-break: keep-all;
         vertical-align: top;
         padding:0;
         margin-right:10px;;
+        /* width:80%; */
+        height: 100%;
+        text-overflow: clip;
     }
     .time a{
         width:30px;
         background:red;
+    }
+    .time a2{
+        /* padding-left:-5%; */
+        /* margin:0; */
     }
     .time a img{
         vertical-align: top;
@@ -152,6 +186,7 @@ div{
         right:0;
         margin-right:5%;
         display: none;
+        margin-right:100%;
     }
     /* 有问题不显示 */
     .time a2:hover img{

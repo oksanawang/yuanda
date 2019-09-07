@@ -9,16 +9,18 @@ body{
     justify-content: space-between;  
     list-style:none;  
     position: relative;
+    height:100%;
+    margin-top:40px;
 }
 div{
     margin:0 auto;
 }
-a{
+.footermap a{
     text-decoration: none;
     color:#999;
     vertical-align:middle;
     line-height:25px;
-
+    font-size:12px;
 }
 /*大屏*/
 @media screen and (min-width:1201px){
@@ -29,11 +31,11 @@ a{
         font-size:12px;
         font-weight:lighter;
         margin:0 auto;
-        /* margin-top:95%; */
         background: #252525;
         position: absolute;
-        bottom:0;
-        left:0;
+        top:100%;
+        right:0;
+        margin-top:80px;
     }
     .map{
         width:1200px;
@@ -42,7 +44,6 @@ a{
         justify-content: space-between;
         margin:auto auto;
         box-sizing:border-box;
-        background: #941717;
     }
     .footermap{
         display: flex;
