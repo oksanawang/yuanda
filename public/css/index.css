@@ -101,6 +101,9 @@ body{
         top:-50px;
         right:19px;
     }
+    .like_heart:hover::after{
+        color:#CC0000;
+    }
 
     /* <!-- 时尚美妆  2F-->  3f美食生活 */
     .second_floor{
